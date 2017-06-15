@@ -1,8 +1,8 @@
 class RecipesController < ApplicationController
   def index
     Recipe.populate_recipe_summaries
-    # render json: Recipe.all
-    render :json => Recipe.all.to_json(:only => ["id", "title", "thumbnail"])
+    @recipes = Recipe.order(created_at: :desc)
+    render :json => @recipes.to_json(:only => ["id", "title", "thumbnail"])
   end
 
   def show
