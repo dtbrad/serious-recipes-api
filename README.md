@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Basic Rails API that serves up recipes scraped from SeriousEats website. So far, just:
 
-Things you may want to cover:
+* index: /recipes
+* show: /recipes/:id
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+More functionality to come (maybe)
